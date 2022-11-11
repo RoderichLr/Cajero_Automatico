@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/app.js"></script>
+
+    <title>Loging</title>
+
+   
+</head>
+<body>
+  <main id="contenedor" >
+      <h1>CAJERO AUTOMÁTICO</h1>
+       <div class="cajacentro">
+            <section id="inicio" >
+                <div  class="grid-container">    
+                   <div class="informacion">
+                     <div  id ='bienvenida'class="saludoBienvenida" > ¡Bienvenido! </div>
+                     <br>
+                     <span  class="invisible" id="indicaciones"  >El mejor banco te desea un buen día <br> 
+                        elige una opcion podras: <br><br>
+                        *  Consultar tu saldo actual <br>
+                        * Depositar tu efectivo <br>
+                        * Retirar un dinerito<br> <br></span>
+                     
+                   </div>
+
+                   <div   class="invisible"   id="btnsAcc" class="botonesAccion">
+                     <input type="button"   onclick="saldoActual()" class="botonOpcionConsultar"  value="Consultar" id="btnC" >
+                     <input type="button"   onclick="sumar()"  class="botonOpcionDepositar" value="Ingresar"  id="btnD">                  
+                     <input type="button"   onclick="restar()" class="botonOpcionRetirar"  value="Retirar"id="btnR" >
+                  </div>
+
+                  <div  class="invisible" class="despliege" id="despliegeCantidad">
+                    <div  id="divSpanC">
+                      <span id="spanCantidad"  >¿Cuanto dinero desea ?</span>
+                     </div>
+                     <div     class="bordeBtn3" id="bordeCantidad">
+                      <div  id = "divInputCantidad" class="inputCantidadTexto">
+                        <input   id="cantidad" onkeypress="return isNumberKey(event)"    type="numer"  class="textoCantidad"  required maxlength="3" autocomplete="off"    autofocus>
+                       </div>
+                       
+                  </div>
+                  
+                </div>
+                <div  class="invisible"  class="botonSumaResta" id="enviar">
+                  <input type="button"   value="Enviar" onclick="confirmacion(); saldoActual();"   id="botonEnviar"  class="btnEnviar" >
+                </div>
+                </div>
+             <div    class="bordeBtn1" id="bordeUsuario">
+                 <input   type="text"  id="usuario"  placeholder="Usuario" required maxlength="20" autocomplete="off"    autofocus>
+             </div>
+             <div     class="bordeBtn2"   id="bordeContraseña">
+                 <input type="password"   id="contraseña"  placeholder="Contraseña"  required maxlength="20" autocomplete="off"  >
+             </div>
+                 <input type="button"   value="Iniciar seción" onclick="iniciar()"   id="botonIniciarSecion"  class="botonInc" >
+            </section>         
+       </div> 
+  </main> 
+</body>
+</html>

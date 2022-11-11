@@ -1,0 +1,259 @@
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body  {
+    min-height: 100vh; 
+    font-family: sans-serif;
+    background: linear-gradient(rgb(15, 6, 103),rgb(54, 71, 64));
+}
+
+.textoCantidad{
+    width: 40px;
+}
+.botonOpcionConsultar:hover{
+    box-shadow: 1px 1px 7px  #ffffff;
+    color: #eee967;
+}
+.botonOpcionDepositar:hover{
+    box-shadow: 1px 1px 7px  #ffffff;
+    color: #eee967;
+}
+.botonOpcionRetirar:hover{
+    box-shadow: 1px 1px 7px  #ffffff;
+    color: #eee967;
+}
+
+.botonOpcionConsultar{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-size: 10px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    background: linear-gradient(rgb(134, 55, 219),rgb(31, 161, 173));
+}
+.botonOpcionDepositar{
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    font-size: 10px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    background: linear-gradient(rgb(134, 55, 219),rgb(31, 161, 173));
+}
+.botonOpcionRetirar{
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-size: 10px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    background: linear-gradient(rgb(134, 55, 219),rgb(31, 161, 173));
+    
+}
+.grid-container {
+    grid-gap: 1rem;
+    font-size: 30px;
+    padding: 1px 3px;
+    text-align: center;
+    height: 230px;
+    color: #02bb77;
+    display: grid;
+    height: auto;
+    grid-template-areas: 
+    "Informacion Informacion Informacion"  
+    "btnAccion  btnAccion   btnAccion"
+    "despliege despliege btnSm " ;
+     
+   
+    color: aliceblue;
+  }
+  .informacion{
+    grid-area: Informacion;
+    margin-right: 10px;
+    
+   
+  }
+  span{
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+  }
+  .saludoBienvenida{
+    grid-area: Saludo;
+    color: #ffffff;
+  }
+  .consultar{
+   
+    grid-area: Consultar;
+    
+
+  }
+  .ingresar{
+   
+  
+    grid-area: Ingresar;
+
+  }
+  .retirar{
+    grid-area: Retirar;
+  }
+
+.registro{
+    display: flex;
+    
+    font-size: 30px;
+    padding: 15px 32px;
+    text-align: center;
+    height: 230px;
+    color: #02bb77;
+}
+h1{
+    color:#fbf9b3 ;
+    margin-top: 10px;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+input{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 17px;
+    width:fit-content;
+ 
+}
+
+
+.botonInc:hover{
+    box-shadow: 1px 1px 8px  #0425ff;
+    color: #eee967;
+    
+}
+.botonInc{
+    margin-top: 20px;
+    padding: 10px 20px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    background: rgb(113, 221, 196);
+    background: linear-gradient(rgb(34, 51, 235),rgb(31, 161, 173));
+}
+::-ms-reveal {
+    filter:invert(100%);
+  }
+
+
+.bordeBtn1{
+    margin-top: 30px;
+ 
+    padding-bottom: 20px;
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+   
+    border-bottom: 1px solid  rgb(0, 150, 87);
+}
+.bordeBtn2{
+    padding-bottom: 2px;
+    margin-top: 20px;
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    border-bottom: 1px solid  rgb(0, 150, 87)  ;
+}
+.bordeBtn3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: Borde ;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: auto;
+    border-bottom: 1px solid  rgb(0, 150, 87);
+}
+.cajacentro {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    width:auto;
+    padding: 10px;
+    height :auto;
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: rgba(4, 4, 4, 0.503);
+    box-shadow: 1px 1px 20px rgb(41, 113, 245);
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+
+
+.botonesAccion{
+display: flex;
+grid-area: btnAccion;
+}
+.despliege{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: despliege;
+}
+.inputCantidadTexto{
+    display: flex;
+    justify-content: space-between;
+
+}
+#divSpanC{
+    margin: 20px;
+}
+.botonSumaResta{
+    grid-area: btnSm;
+}
+
+.btnEnviar{
+    margin-top: 20px;
+    padding: 5px 15px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    background: rgb(113, 221, 196);
+    background: linear-gradient(rgb(34, 51, 235),rgb(31, 161, 173));  
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
